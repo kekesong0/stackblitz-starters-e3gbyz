@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-left a,
+.nav-right a {
+  text-decoration: none;
+  color: #5b3d2d;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.title {
+  text-align: center;
+}
+
+.title-main {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #5b3d2d;
+  text-shadow: 1px 1px #cde2e2;
+}
+
+.title-sub {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  color: #5b3d2d;
+  display: block;
+  margin-top: -5px;
+  font-style: italic;
+}
+
+.contact-button {
+  background-color: rgba(204, 153, 0, 0.3);
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: rgba(204, 153, 0, 0.6);
+}
+
+.main-banner {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1523294587484-bae6cc870010?q=80&w=3102&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.main-banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 36, 36, 0.5);
+  z-index: 1;
+}
+
+.main-banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.main-banner h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.main-banner p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #2e614e;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #204536;
+}
+
+.products-section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.products-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.products-section p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(20% - 1rem);
+  min-width: 200px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: 310px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+/* Contact Us Page Styles */
+.contact-banner {
+  background-color: rgba(204, 153, 0, 0.3);
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #333;
+}
+
+.contact-banner h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #5b3d2d;
+}
+
+.contact-banner p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0.5rem auto;
+  color: #333;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info,
+.contact-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #5b3d2d;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info i {
+  color: #2e614e;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 1rem;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2e614e;
+  outline: none;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  background-color: #2e614e;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #204536;
+}
+
+/* About Us Page Styles */
+.about-banner {
+  background-color: rgba(204, 153, 0, 0.3);
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #333;
+}
+
+.about-banner h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #5b3d2d;
+}
+
+.about-banner p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0.5rem auto;
+  color: #333;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+.about-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1.5rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.about-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.about-images img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+footer p {
+  margin-top: 0.5rem;
+}
